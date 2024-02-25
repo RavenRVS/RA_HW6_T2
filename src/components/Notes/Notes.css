@@ -1,0 +1,170 @@
+.notes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  
+    margin-top: 15px;
+  
+    min-width: 300px;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .notes-header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  
+    font-size: 22px;
+  
+    gap: 15px;
+  }
+  
+  
+  .notes-btn {
+    height: 35px;
+    width: 35px;
+    
+    border: 1px solid grey;
+    border-radius: 50%;
+  
+    cursor: pointer;
+  
+    user-select: none;
+    transition: transform 0.2s ease;
+  }
+  
+  .notes-btn:hover {
+    box-shadow: 0 0 3px 0 grey;
+  }
+  
+  .notes-btn:active {
+    transform: scale(0.9) rotate(360deg);
+  }
+  
+  .notes-header__btn {
+    background-image: url('data:image/svg+xml,%3Csvg%20version%3D%221.0%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264.000000pt%22%20height%3D%2264.000000pt%22%20viewBox%3D%220%200%2064.000000%2064.000000%22%20preserveAspectRatio%3D%22xMidYMid%20meet%22%3E%3Cg%20transform%3D%22translate%280.000000%2C64.000000%29%20scale%280.100000%2C-0.100000%29%22%20fill%3D%22%23008000%22%20stroke%3D%22none%22%3E%3Cpath%20d%3D%22M279%20561%20c-40%20-13%20-72%20-31%20-101%20-59%20-23%20-21%20-30%20-23%20-43%20-12%20-13%2011%20-18%2011%20-31%20-1%20-12%20-13%20-12%20-21%202%20-63%20l17%20-48%2050%206%20c28%203%2058%2013%2066%2021%2015%2015%2014%2018%20-6%2034%20-21%2017%20-21%2020%20-5%2034%2072%2065%20195%2041%20248%20-48%2016%20-28%2033%20-45%2045%20-45%2050%200%20-6%20114%20-75%20155%20-47%2028%20-125%2040%20-167%2026z%22%2F%3E%3Cpath%20d%3D%22M101%20276%20c-10%20-11%20-8%20-23%207%20-53%2070%20-135%20241%20-165%20348%20-62%2020%2019%2034%2027%2038%2020%204%20-6%2016%20-11%2027%20-11%2024%200%2026%2035%204%2086%20-14%2034%20-17%2036%20-51%2029%20-58%20-10%20-84%20-23%20-84%20-41%200%20-9%209%20-18%2020%20-21%2027%20-7%2025%20-17%20-7%20-38%20-87%20-58%20-210%20-22%20-249%2072%20-15%2035%20-34%2042%20-53%2019z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  
+  
+  .notes-form {
+    position: relative;
+    width: 100%;
+  
+    margin-top: 15px;
+  }
+  
+  .notes-from-name {
+    padding: 10px;
+  }
+  
+  .notes-form__text {
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+  
+    padding: 10px;
+  
+    border: none;
+    box-shadow: 0 0 3px 0 grey;
+  }
+  
+  .notes-form__text:focus {
+    outline: none;
+    box-shadow: inset 0 0 4px 1px #5c5c5c;
+  }
+  
+  .notes-form__btn {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+  
+    background-image: url('data:image/svg+xml,%3Csvg%20version%3D%221.0%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264.000000pt%22%20height%3D%2264.000000pt%22%20viewBox%3D%220%200%2064.000000%2064.000000%22%20preserveAspectRatio%3D%22xMidYMid%20meet%22%3E%3Cg%20transform%3D%22translate%280.000000%2C64.000000%29%20scale%280.100000%2C-0.100000%29%22%20fill%3D%22%23000000%22%20stroke%3D%22none%22%3E%3Cpath%20d%3D%22M141%20520%20c8%20-14%2039%20-64%2068%20-112%20l54%20-88%20-54%20-87%20c-29%20-49%20-60%20-99%20-68%20-113%20-15%20-22%20-10%20-21%2054%2015%20188%20106%20315%20180%20315%20185%200%205%20-127%2079%20-315%20185%20-64%2036%20-69%2037%20-54%2015z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
+  }
+  
+  .notes-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+  }
+  
+  .notes-card {
+    position: relative;
+    min-width: 200px;
+    max-width: 280px;
+    min-height: 100px;
+    width: 100%;
+    margin-top: 25px;
+  
+    border: 1px solid grey;
+    box-shadow: 0 0 3px 0 grey;
+    
+    border-radius: 15px;
+  }
+  
+  .notes-card:hover {
+    box-shadow: 0 0 6px 1px grey;
+  }
+  
+  .notes-card__btn {
+    position: absolute;
+    top: -17px;
+    right: -17px;
+  
+    background-color: white;
+  
+    background-image: url('data:image/svg+xml,%3Csvg%20version%3D%221.0%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264.000000pt%22%20height%3D%2264.000000pt%22%20viewBox%3D%220%200%2064.000000%2064.000000%22%20preserveAspectRatio%3D%22xMidYMid%20meet%22%3E%3Cg%20transform%3D%22translate%280.000000%2C64.000000%29%20scale%280.100000%2C-0.100000%29%22%20fill%3D%22%23FF0000%22%20stroke%3D%22none%22%3E%3Cpath%20d%3D%22M72%20568%20l-32%20-33%20107%20-107%20108%20-108%20-108%20-108%20-107%20-107%2032%20-33%2033%20-32%20107%20107%20108%20108%20108%20-108%20107%20-107%2033%2032%2032%2033%20-107%20107%20-108%20108%20108%20108%20107%20107%20-32%2033%20-33%2032%20-107%20-107%20-108%20-108%20-108%20108%20-107%20107%20-33%20-32z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .notes-card:hover .notes-card__btn {
+    box-shadow: 0 0 6px 0 grey;
+  }
+  
+  .notes-card__text {
+    padding: 20px;
+  
+    font-size: 15px;
+    text-align: center;
+  
+    word-wrap: break-word;
+    white-space: pre-wrap;
+  }
+  
+  @keyframes loading {
+    0% {
+      content: "Загрузка";
+    }
+    25% {
+      content: "Загрузка.";
+    }
+    50% {
+      content: "Загрузка..";
+    }
+    75% {
+      content: "Загрузка...";
+    }
+  }
+  
+  .loading-animation {
+    margin: 15px auto 0;
+    width: 100px;
+  
+    font-weight: 500;
+  }
+  
+  .loading-animation::after {
+    content: "Загрузка";
+    animation: loading 1s infinite;
+  }
