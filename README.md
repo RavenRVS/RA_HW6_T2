@@ -2,6 +2,6 @@
 
 ***
 
-[Ссылка на Github Pages](https://ravenrvs.github.io/RA_HW5_T2/)
+[Ссылка на Github Pages](https://ravenrvs.github.io/RA_HW6_T2/)
 
 [Ссылка на backend-репозиторий](https://github.com/RavenRVS/RA_HW6_T2_backend)
